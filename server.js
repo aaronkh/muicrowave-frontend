@@ -21,9 +21,9 @@ app.post('/image-recognition', function(req, res){
     res.send(JSON.stringify({name: 'popcorn', time: 6}))
 })
 if (!process.env.PORT) process.env.PORT = 3000
-https.createServer({
-    key: fs.readFileSync('server.key'),
-    cert: fs.readFileSync('server.cert')
-  }, app)
-  .listen(process.env.PORT, function () { console.log('now listening on ' + 
+// https.createServer({
+//     key: fs.readFileSync('server.key'),
+//     cert: fs.readFileSync('server.cert')
+//   }, app)
+ app.listen(process.env.PORT, function () { console.log('now listening on ' + 
 process.env.PORT) })

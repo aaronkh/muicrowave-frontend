@@ -66,10 +66,10 @@ app.post('/cc', (req, res) => {
         console.log(body)
         body = JSON.parse(body.substr(1))
         console.log(body)
-        if(body.transactionResponse.requestCode % 3 == 1)
+        // if(body.transactionResponse.requestCode % 3 == 1)
             res.status(200).send()
-        else
-            res.status(500).send()
+        // else
+            // res.status(500).send()
     })
 })
 if (!process.env.PORT) process.env.PORT = 3000

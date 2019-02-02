@@ -1,0 +1,47 @@
+{
+    "createTransactionRequest": {
+        "merchantAuthentication": {
+            "name": "7cDbRu4c55RZ",
+            "transactionKey": "6V465kPnbJ36YW9W"
+        },
+        "refId": "123456",
+        "transactionRequest": {
+            "transactionType": "authCaptureTransaction",
+            "amount": "5",
+            "payment": {
+                "creditCard": {
+                    "cardNumber": "5424000000000015",
+                    "expirationDate": "2020-12",
+                    "cardCode": "999"
+                }
+            },
+            "lineItems": {
+                "lineItem": {
+                    "itemId": "1",
+                    "name": "vase",
+                    "description": "Cannes logo",
+                    "quantity": "18",
+                    "unitPrice": "45.00"
+                }
+            },
+            "transactionSettings": {
+                "setting": {
+                    "settingName": "testRequest",
+                    "settingValue": "false"
+                }
+            },
+            "userFields": {
+                "userField": [
+                    {
+                        "name": "MerchantDefinedFieldName1",
+                        "value": "MerchantDefinedFieldValue1"
+                    },
+                    {
+                        "name": "favorite_color",
+                        "value": "blue"
+                    }
+                ]
+            }
+        }
+    }
+}

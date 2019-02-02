@@ -25,8 +25,8 @@ app.post('/cc', (req, res) => {
     let obj = {
         "createTransactionRequest": {
             "merchantAuthentication": {
-                "name": "7cDbRu4c55RZ",
-                "transactionKey": "6V465kPnbJ36YW9W"
+                "name": process.env.authorizeName,
+                "transactionKey": process.env.tKey
             },
             "transactionRequest": {
                 "transactionType": "authCaptureTransaction",
